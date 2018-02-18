@@ -1,0 +1,362 @@
+
+html {
+  font-family: 18px;
+}
+
+body {
+  font-family: helvetica;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.mainbanner{
+  display:flex;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  height:30rem;
+
+
+}
+
+/*header*/
+header {
+  display: flex;
+  background-color: cadetblue;
+  margin: 1rem auto;
+  width: 960px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo img {
+  height: 1.5rem;
+  width: auto;
+}
+
+.logo span {
+  color:white;
+  font-size: 1rem;
+  padding-left: 1rem;
+
+}
+
+.nav span {
+  color: white;
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+.menu {
+  display: none;
+}
+
+/*slogan*/
+.slogancontainer{
+  margin-top: 10rem;
+  width: auto;
+  display: flex;
+  justify-content: flex-end;
+  width: 1032px;
+
+}
+
+.slogan {
+background-color: white;
+padding: 1.5rem 5rem;
+margin: auto;
+margin-right: 0
+}
+
+.slogan h1{
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+/*Main content*/
+.maincontent {
+  display:flex;
+  margin: auto;
+  background-color: azure;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*icons*/
+.icons {
+display: flex;
+margin: auto;
+justify-content: center;
+
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  height: 8rem;
+  width: 5rem;
+  margin:3rem;
+}
+
+.icon img {
+  display: block;
+  text-align: center;
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+ #paper img {
+  display: block;
+  text-align: center;
+  width: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.icon span {
+  display: block;
+  text-align: center;
+}
+
+
+/*Phylosophy and Appointments*/
+
+.PhylandAppt {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 960px;
+}
+
+.PhylandAppt h2{
+  padding: 0.5rem 1.25rem;
+  background-color: cadetblue;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+  width: 10rem;
+  text-align: left;
+}
+
+.PhylandAppt span {
+  text-align: left;
+  margin-bottom: 5rem;
+}
+
+.Phylosophy {
+display: flex;
+flex-direction: column;
+width: 35%;
+margin-right: 5%
+}
+
+.Appointments {
+  display: flex;
+  flex-direction: column;
+  width: 35%
+}
+
+/*FOOTER*/
+footer {
+  display: flex;
+  justify-content: flex-start;
+  margin: 4rem;
+  width: 960px;
+}
+
+footer img {
+  height:1.5rem;
+  width: auto;
+}
+
+footer span {
+  margin-left: 1rem;
+}
+
+/*Tablet*/
+@media only screen and (max-width: 1024px)
+{
+  header {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .maincontent {
+    width: 100%;
+  }
+
+.mainbanner {
+  height: 22rem;
+}
+  .slogancontainer{
+    margin-top: 5rem;
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .slogan {
+  background-color: white;
+  padding: 0.75rem 4rem;
+  margin-right: 2rem;
+  }
+
+  .slogan h1{
+    font-size: 1.33rem;
+  }
+
+}
+
+
+/*phone size*/
+
+@media only screen and (max-width: 470px)
+{
+
+  header {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .logo span {
+    display: none;
+  }
+
+  .nav span {
+    display: none;
+  }
+
+.menu {
+  display: inline;
+}
+
+  .menu span {
+    color: white;
+    font-size: 1rem;
+    margin: 1rem;
+  }
+
+  .maincontent {
+    width: 100%;
+  }
+
+.mainbanner {
+  height: 17rem;
+  background-position: 20%;
+  }
+
+  .slogancontainer{
+    margin-top: 9rem;
+    width: auto;
+    display: block;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    padding: 0;
+  }
+
+  .slogan {
+  display: block;
+  background-color: white;
+  width:auto;
+  padding: 0;
+  }
+
+  .slogan h1{
+    font-size: 1rem;
+    text-align: center;
+    padding: 0;
+  }
+
+  .icons {
+    flex-direction: column;
+    align-content: center;
+    margin: 3.77rem auto;
+  }
+
+  .icon {
+    margin-top:1.54rem;
+    margin-bottom: 0rem;
+    justify-content: center;
+  }
+
+.icon span {
+  font-size: 0.77rem;
+  margin: 0;
+  padding: 0;
+}
+
+.icon img {
+  margin: 0;
+  padding: 0;
+}
+
+.PhylandAppt {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin: auto;
+  width: auto;
+}
+
+.PhylandAppt h2{
+
+  padding: 0.5rem 0;
+  background-color: cadetblue;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+  width: auto;
+  text-align: center;
+}
+
+.PhylandAppt span {
+  width: auto;
+  font-size: 0.77rem;
+  margin-bottom: 4rem;
+  text-align: left;
+}
+
+.Phylosophy {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+
+.Appointments {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+footer span {
+  display: none;
+
+}
+
+footer {
+  justify-content: center;
+  width: auto;
+}
+
+
+}
